@@ -91,8 +91,10 @@ public class Main {
             System.out.println("Indtast dit password:");
             String thisPassword = scanner.next();
             if (thisPassword.equals(eventManeger.getLoggedInUser().getPassword())) {
+
                 System.out.println("indtast dit nye password");
                 thisPass = scanner.next();
+
                 System.out.println("gentag dit nye password");
                 thisPass1 = scanner.next();
                 attempt = 0;
@@ -116,6 +118,7 @@ public class Main {
             System.out.println("1: ændre password");
             System.out.println("2: ændre E-mail");
             System.out.println("0: gem og afslut instillinger");
+
             int valg = scanner.nextInt();
 
             switch (valg){
@@ -134,12 +137,16 @@ public class Main {
             }
         }
     }
+
     public static void opretEvent(){
         Scanner input = new Scanner(System.in);
+
         System.out.println("Indtast navn på event");
         String thisNavn = scanner.next();
+
         System.out.println("indtast dato (dd/mm-yyyy)");
         String thisDate = scanner.next();
+
         System.out.println("indtast beskrivelse");
         String thisBeskrivelse = input.nextLine();
 
@@ -184,6 +191,7 @@ public class Main {
             }
         }
     }
+
     public static void redigereUserEvent(){
 
         int index = 0;
@@ -203,6 +211,7 @@ public class Main {
         System.out.println("2: dato");
         System.out.println("Hvad vil du redigere på dit event?");
         int valg = scanner.nextInt();
+
         if (valg == 1){
             System.out.println("Indtast nyt event navn");
             event.setName(scanner.next());
@@ -261,6 +270,7 @@ public class Main {
 
         }
     }
+
     public static void run(){
         boolean run = true;
 
@@ -291,6 +301,7 @@ public class Main {
 
         }
     }
+
     public static void main(String[] args) {
         opretTestEvent();
         opretAdminBruger();
