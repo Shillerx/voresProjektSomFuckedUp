@@ -8,7 +8,7 @@ public static void adminMenu(){
     while(adminMenuRun){
         System.out.println("Admin Menu");
         System.out.println("1: Opret 3 TestEvent");
-        System.out.println("2: normal Bruger menu");
+        System.out.println("2: Bruger menu");
 
         System.out.println("0: Afslut admin menu");
         int thisAdminValg = Main.scanner.nextInt();

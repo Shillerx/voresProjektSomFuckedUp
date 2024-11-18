@@ -28,6 +28,12 @@ public class Main {
         }
     }
 
+    public static void clear(){
+        for (int i = 0; i < 20; i++){
+            System.out.println(" ");
+        }
+    }
+
     //Metode til at oprette admin og shillerx profilen ved run()
     public static void opretAdminBruger(){
         User adminUser = new User("admin","admin","admin@admin.com");
@@ -233,7 +239,7 @@ public class Main {
         boolean userMenuRun = true;
 
         while(userMenuRun){
-            System.out.println("velkommen til userMenu");
+            System.out.println("velkommen til userMenu " + eventManeger.getLoggedInUser().getUserName());
             System.out.println("1: opret event");
             System.out.println("2: tilmeld event");
             System.out.println("3: redigere mit event");
@@ -296,6 +302,9 @@ public class Main {
                 case 3:
                     eventManeger.displayUsers();
                     break;
+                case 0:
+                    System.out.println("Afslutter program");
+                    System.exit(0);
                 default:
                     run = false;
                     break;
