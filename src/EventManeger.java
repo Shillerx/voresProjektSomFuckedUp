@@ -18,6 +18,7 @@ public class EventManeger {
             }
         }
     }
+
     public void addEventTilArray(Event e){
         events[eventsArrayIndex] = e;
         eventsArrayIndex++;
@@ -45,6 +46,7 @@ public class EventManeger {
         int index = findBrugerensPladsIArray(loggedInUser);
         users[index] = loggedInUser;
     }
+
     public int findBrugerensPladsIArray(User u) {
         boolean found = false;
         int plads = 0;
@@ -66,10 +68,12 @@ public class EventManeger {
         users[usersArrayIndex] = user;
         usersArrayIndex++;
     }
+
     public void addEventToArray(Event event) {
         events[eventsArrayIndex] = event;
         eventsArrayIndex++;
     }
+
     public void displayYourOwnEvents(User u) {
         for (int i = 0; i < events.length; i++) {
             if (events[i] != null) {
@@ -80,6 +84,7 @@ public class EventManeger {
             }
         }
     }
+
     public void displayEvents(){
         for (int i = 0; i < events.length; i++) {
             if (events[i] != null) {
@@ -87,6 +92,7 @@ public class EventManeger {
             }
         }
     }
+
     public void displayUsers() {
         for (int i = 0; i < users.length; i++) {
             if (users[i] != null) {
@@ -96,6 +102,7 @@ public class EventManeger {
             }
         }
     }
+
     public void deleteEventFromArray(Event event) {
         boolean found = false;
 
