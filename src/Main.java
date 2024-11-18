@@ -37,6 +37,7 @@ public class Main {
         eventManeger.addUserToArray(shillerx);
         run();
     }
+
     public static void opretTestEvent(){
         User adminUser = new User("admin","admin","admin@admin.com");
         Event testEvent = new Event("fællesspisning", "Hyggelig spisning sammen. Tag med hvad du har", "04/12-2024",adminUser);
@@ -47,6 +48,7 @@ public class Main {
         eventManeger.addEventToArray(testEvent2);
         eventManeger.addEventToArray(testEvent3);
     }
+
     public static void register (){
         System.out.println("Indtast brugernavn");
         String thisUsername = scanner.next().toLowerCase();
@@ -81,7 +83,6 @@ public class Main {
         System.out.println("Forkert PassWord");
     }
 
-
     public static void skiftPassword(){
         String thisPass = "  dgr";
         String thisPass1 = "";
@@ -110,6 +111,7 @@ public class Main {
             }
         }
     }
+
     public static void settings(){
         boolean settingsRun = true;
         while(settingsRun){
