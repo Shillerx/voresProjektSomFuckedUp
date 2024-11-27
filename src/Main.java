@@ -41,7 +41,6 @@ public class Main {
 
         eventManeger.addUserToArray(adminUser);
         eventManeger.addUserToArray(shillerx);
-        run();
     }
 
     public static void opretTestEvent(){
